@@ -15,7 +15,7 @@ import javax.security.auth.login.LoginException;
 public class MainActivity implements EventListener {
     public static void main(String[] args) throws LoginException, InterruptedException {
 
-        JDA jda = JDABuilder.createDefault("testing")
+        JDA jda = JDABuilder.createDefault("testings")
                 .addEventListeners(new MainActivity())
                 .build();
 
