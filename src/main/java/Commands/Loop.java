@@ -62,7 +62,7 @@ public class Loop extends Command {
         final boolean newLooping = !musicManager.scheduler.looping;
         musicManager.scheduler.looping = newLooping;
         if(newLooping){
-            eb = EmbedMaker.embedBuilderDescription("I will be looping that track till it's tried");
+            eb = EmbedMaker.embedBuilderDescription("I will be looping that track till it's tired");
         }
         else{
             eb = EmbedMaker.embedBuilderDescription("Tired of its sound? Would not be looping the track now.");

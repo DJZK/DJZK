@@ -62,7 +62,7 @@ public class LoopQueue extends Command {
         final boolean newLoopQueue = !musicManager.scheduler.loopQueue;
         musicManager.scheduler.loopQueue = newLoopQueue;
         if(newLoopQueue){
-            eb = EmbedMaker.embedBuilderDescription("I will be looping these tracks till they're tried");
+            eb = EmbedMaker.embedBuilderDescription("I will be looping these tracks till they're tired");
         }
         else{
             eb = EmbedMaker.embedBuilderDescription("Tired of 'em? Then would not be looping them...");
