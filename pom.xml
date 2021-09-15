@@ -12,6 +12,14 @@
 
     <dependencies>
         <dependency>
+            <groupId>pw.chew</groupId>
+            <artifactId>jda-chewtils</artifactId>
+            <version>1.22.0</version>
+            <scope>compile</scope>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
             <version>4.3.0_277</version>
@@ -25,7 +33,12 @@
     </dependencies>
 
     <repositories>
-            <repository>
+        <repository>
+            <id>chew-m2</id>
+            <url>https://m2.chew.pro/releases</url>
+        </repository>
+
+        <repository>
             <id>dv8tion</id>
             <name>m2-dv8tion</name>
             <url>https://m2.dv8tion.net/releases</url>

@@ -9,7 +9,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="" />
+    <list default="true" id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/DJZK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJZK.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_command_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_commons_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_doc_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_examples_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_menu_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_oauth2_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-command-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-commons-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-doc-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-examples-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-menu-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-oauth2-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Clear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Echo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Join.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Leave.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Loop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/LoopQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/NowPlaying.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Play.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Remove.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Shuffle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Skip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Stop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/EmbedMaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/MessageSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/MusicManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerSendHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/TrackScheduler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/UniversalVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainActivity.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,10 +79,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jda-utilities-oauth2-3.0.5.jar" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40028593" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn deploy" />
+      <command value="mvn clean" />
+      <command value="mvn clean:clean" />
+      <command value="mvn compile" />
+      <command value="mvn install:install-file" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="MainActivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -98,6 +146,16 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
