@@ -9,45 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/DJZK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJZK.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_command_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_commons_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_doc_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_examples_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_menu_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jda_utilities_oauth2_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-command-3.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-commons-3.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-doc-3.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-examples-3.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-menu-3.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jda-utilities-oauth2-3.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Clear.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Echo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Join.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Leave.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Loop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/LoopQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/NowPlaying.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Play.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Remove.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Shuffle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Skip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Stop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/EmbedMaker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/MessageSender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/MusicManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerSendHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/TrackScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/UniversalVariables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainActivity.class" beforeDir="false" />
+    <list default="true" id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="Changed and used forked version of JDA Utils">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="DJZK &lt;emperorxizzle99@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -89,8 +57,8 @@
       <command value="mvn deploy" />
       <command value="mvn clean" />
       <command value="mvn clean:clean" />
-      <command value="mvn compile" />
       <command value="mvn install:install-file" />
+      <command value="mvn compile" />
     </option>
   </component>
   <component name="RunManager">
@@ -144,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631740121079</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed and used forked version of JDA Utils">
+      <created>1631741542611</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631741542611</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -172,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Added Lyrics and Updated the libraries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Lyrics and Updated the libraries" />
+    <MESSAGE value="Changed and used forked version of JDA Utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed and used forked version of JDA Utils" />
   </component>
 </project>
