@@ -13,8 +13,6 @@ import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.TextChannel;
 
-import java.util.concurrent.ExecutionException;
-
 public class Lyrics extends Command {
 
     public Lyrics(){
@@ -34,7 +32,7 @@ public class Lyrics extends Command {
         final Member member = e.getMember();
         final MusicManager musicManager = PlayerManager.getInstance().getMusicManager(e.getGuild());
         final AudioPlayer audioPlayer = musicManager.audioPlayer;
-        LyricsClient client = new LyricsClient();
+        final LyricsClient client = new LyricsClient();
         EmbedBuilder eb;
 
         // Bot in VC
@@ -69,12 +67,11 @@ public class Lyrics extends Command {
                 com.jagrosh.jlyrics.Lyrics lyrics = client.getLyrics(audioPlayer.getPlayingTrack().getInfo().title).get();
                 eb = EmbedMaker.embedBuilderAuthor(audioPlayer.getPlayingTrack().getInfo().title, lyrics.getContent());
                 channel.sendMessage(eb.build()).queue();
-            } catch (InterruptedException interruptedException) {
-                interruptedException.printStackTrace();
-            } catch (ExecutionException executionException) {
-                executionException.printStackTrace();
+            } catch (Exception err) {
+                err.printStackTrace();
+                eb = EmbedMaker.embedBuilderDescription("Oops. I think I searched the wrong thing, in a place where i shouldn't go... Can you try again...?");
+                channel.sendMessage(eb.build()).queue();
             }
-
         }
     }
 
