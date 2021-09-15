@@ -12,6 +12,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jlyrics-0.5-jar-with-dependencies" level="project" />
+    <orderEntry type="library" name="jda-utilities-command-3.0.5" level="project" />
     <orderEntry type="library" name="Maven: net.dv8tion:JDA:4.3.0_277" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:16.0.1" level="project" />
@@ -37,6 +38,10 @@
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.jsoup:jsoup:1.12.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: net.iharder:base64:2.3.9" level="project" />
-    <orderEntry type="library" name="jda-utilities-command-3.0.5" level="project" />
+    <orderEntry type="library" name="jda-utilities-commons-3.0.5" level="project" />
+    <orderEntry type="library" name="jda-utilities-doc-3.0.5" level="project" />
+    <orderEntry type="library" name="jda-utilities-examples-3.0.5" level="project" />
+    <orderEntry type="library" name="jda-utilities-menu-3.0.5" level="project" />
+    <orderEntry type="library" name="jda-utilities-oauth2-3.0.5" level="project" />
   </component>
 </module>
