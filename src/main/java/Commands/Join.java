@@ -69,7 +69,7 @@ public class Join extends Command {
         musicManager.scheduler.lastID = channel;
         musicManager.scheduler.guild = e.getGuild();
         musicManager.scheduler.lastUser = member;
-        musicManager.scheduler.echo = false;
+        musicManager.scheduler.echo = true;
         musicManager.scheduler.looping = false;
         musicManager.scheduler.loopQueue = false;
         musicManager.scheduler.retryCount = 0;

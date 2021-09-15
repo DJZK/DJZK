@@ -23,23 +23,23 @@ public class PlayerManager {
     private final Map<Long, MusicManager> musicManagers;
     private final AudioPlayerManager audioPlayerManager;
 
-    public PlayerManager(){
+    public PlayerManager() {
         this.musicManagers = new HashMap<>();
         this.audioPlayerManager = new DefaultAudioPlayerManager();
         AudioSourceManagers.registerRemoteSources(this.audioPlayerManager);
         AudioSourceManagers.registerLocalSource(this.audioPlayerManager);
     }
 
-    public MusicManager getMusicManager(Guild guild){
-        return this.musicManagers.computeIfAbsent(guild.getIdLong(), (guildId) ->{
+    public MusicManager getMusicManager(Guild guild) {
+        return this.musicManagers.computeIfAbsent(guild.getIdLong(), (guildId) -> {
             final MusicManager musicManager = new MusicManager(this.audioPlayerManager);
 
             guild.getAudioManager().setSendingHandler(musicManager.getSendHandler());
-            return  musicManager;
+            return musicManager;
         });
     }
 
-    public void loadAndPlay(TextChannel channel, String trackURL, String type){
+    public void loadAndPlay(TextChannel channel, String trackURL, String type) {
         final MusicManager musicManager = this.getMusicManager(channel.getGuild());
         this.audioPlayerManager.loadItemOrdered(musicManager, trackURL, new AudioLoadResultHandler() {
             @Override
@@ -48,7 +48,7 @@ public class PlayerManager {
                 musicManager.scheduler.queue(audioTrack);
 
                 // URL Track based
-                if(musicManager.scheduler.echo) {
+                if (musicManager.scheduler.echo) {
                     eb = EmbedMaker.embedBuilderAuthor("Adding to queue: ",
                             audioTrack.getInfo().title + "\n"
                                     + audioTrack.getInfo().uri);
@@ -63,25 +63,26 @@ public class PlayerManager {
                 final List<AudioTrack> tracks = audioPlaylist.getTracks();
 
                 // Searching
-                if(type.equals("search")){
+                if (type.equals("search")) {
                     // Will load the first result
                     final AudioTrack oneTrack = tracks.get(0);
 
                     // Adding to queue
                     musicManager.scheduler.queue(oneTrack);
 
-                    if(musicManager.scheduler.echo) {
+                    if (musicManager.scheduler.echo) {
                         eb = EmbedMaker.embedBuilderAuthor("Adding to queue: ",
-                                tracks.get(0).getInfo().title + "\n"
-                                        + tracks.get(0).getInfo().uri);
+                                oneTrack.getInfo().title + "\n"
+                                        + oneTrack.getInfo().uri);
 
                         channel.sendMessage(eb.build()).queue();
                     }
+
+                    //  musicManager.scheduler.LastPlayingTrack = oneTrack.getInfo().title;
                     return;
-                }
-                else if(type.equals("playlist")){
+                } else if (type.equals("playlist")) {
                     // Shows the size of the playlist
-                    if(musicManager.scheduler.echo) {
+                    if (musicManager.scheduler.echo) {
                         eb = EmbedMaker.embedBuilderDescription("Adding to queue: '"
                                 + String.valueOf(tracks.size())
                                 + "' tracks from playlist '"
@@ -92,12 +93,12 @@ public class PlayerManager {
                     }
 
                     // Loop for adding the tracks to queue
-                    for(final AudioTrack track: tracks){
+                    for (final AudioTrack track : tracks) {
                         musicManager.scheduler.queue(track);
                     }
 
 
-                    if(musicManager.scheduler.echo){
+                    if (musicManager.scheduler.echo) {
                         final AudioPlayer player = musicManager.audioPlayer;
                         final AudioTrack tracker = player.getPlayingTrack();
                         final AudioTrackInfo info = tracker.getInfo();
@@ -105,6 +106,8 @@ public class PlayerManager {
                         eb = EmbedMaker.embedBuilderAuthor("Now Playing ", info.title + "\n" + info.uri);
                         channel.sendMessage(eb.build()).queue();
                         eb.clear();
+
+
                     }
 
                     return;
@@ -126,8 +129,8 @@ public class PlayerManager {
         });
     }
 
-    public static PlayerManager getInstance(){
-        if(INSTANCE == null){
+    public static PlayerManager getInstance() {
+        if (INSTANCE == null) {
             INSTANCE = new PlayerManager();
         }
         return INSTANCE;

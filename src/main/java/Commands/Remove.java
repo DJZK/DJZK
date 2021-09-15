@@ -79,6 +79,7 @@ public class Remove extends Command {
             channel.sendMessage(eb.build()).queue();
             eb.clear();
             queue.remove(aud);
+            System.out.println("Removed from queue: " + aud.getInfo().title);
         }
         // Error of course
         catch (Exception err) {

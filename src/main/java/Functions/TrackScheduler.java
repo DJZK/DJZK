@@ -17,7 +17,8 @@ public class TrackScheduler extends AudioEventAdapter {
     public final AudioPlayer player;
     public final BlockingQueue<AudioTrack> queue;
 
-    public boolean looping = false, loopQueue = false, echo = false;
+    public boolean looping = false, loopQueue = false, echo = true;
+    public String LastPlayingTrack;
     public TextChannel lastID;
     public Guild guild;
     public Member lastUser;

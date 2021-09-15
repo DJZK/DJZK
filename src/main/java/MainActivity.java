@@ -11,11 +11,13 @@ import net.dv8tion.jda.api.hooks.EventListener;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
 import javax.security.auth.login.LoginException;
+import java.util.Scanner;
 
 public class MainActivity implements EventListener {
+
     public static void main(String[] args) throws LoginException, InterruptedException {
 
-        JDA jda = JDABuilder.createDefault("testings")
+        JDA jda = JDABuilder.createDefault("")
                 .addEventListeners(new MainActivity())
                 .build();
 
@@ -24,13 +26,13 @@ public class MainActivity implements EventListener {
         jda.awaitReady();
 
         // Sets the Online Status + Game Playing
-        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.listening("what you want"));
+        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.listening("my queen..."));
 
         // Commands
         CommandClientBuilder command = new CommandClientBuilder();
 
         command.setOwnerId("623189902510522373");
-        command.setPrefix(":");
+        command.setPrefix(";");
         command.setHelpWord("help");
 
         // Commands go here vvvvvvvvvvvvvvvvvvvvv
@@ -47,7 +49,8 @@ public class MainActivity implements EventListener {
                 new Remove(),
                 new Shuffle(),
                 new Skip(),
-                new Stop()
+                new Stop(),
+                new Lyrics()
         );
 
 
