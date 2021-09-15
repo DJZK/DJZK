@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DJZK:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jlyrics_0_5_jar_with_dependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DJZK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJZK.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/DJZK_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/DJZK_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/DJZK_jar/DJZK.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Remove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Commands/Remove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/PlayerManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/PlayerManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/TrackScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/TrackScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainActivity.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1yBWHsCS0SV9vE67cWG4ZDOkXg8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainActivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainActivity" />
+      <module name="DJZK" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainActivity" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="" />
+      <created>1631725376557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631725376557</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added Lyrics and Updated the libraries">
+      <created>1631732485777</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631732485777</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Lyrics and Updated the libraries">
+      <created>1631733944698</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631733944698</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Lyrics and Updated the libraries">
+      <created>1631735054562</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631735054562</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Lyrics and Updated the libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Lyrics and Updated the libraries" />
+  </component>
+</project>

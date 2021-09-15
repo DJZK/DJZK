@@ -43,6 +43,6 @@
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.jsoup:jsoup:1.12.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: net.iharder:base64:2.3.9" level="project" />
-    <orderEntry type="library" name="jlyrics-0.5-jar-with-dependencies" level="application" />
+    <orderEntry type="library" name="jlyrics-0.5-jar-with-dependencies" level="project" />
   </component>
 </module>
