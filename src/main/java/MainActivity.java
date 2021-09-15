@@ -49,8 +49,7 @@ public class MainActivity implements EventListener {
                 new Remove(),
                 new Shuffle(),
                 new Skip(),
-                new Stop(),
-                new Lyrics()
+                new Stop()
         );
 
 
