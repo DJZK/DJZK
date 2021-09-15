@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="Changed and used forked version of JDA Utils">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" beforeDir="false" />
+    <list default="true" id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="Removed Lyrics. It's hopeless....">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainActivity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631741542611</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Removed Lyrics. It's hopeless....">
+      <created>1631741754951</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631741754951</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Removed Lyrics. It's hopeless....">
+      <created>1631741891741</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631741891741</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -148,6 +164,7 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Added Lyrics and Updated the libraries" />
     <MESSAGE value="Changed and used forked version of JDA Utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed and used forked version of JDA Utils" />
+    <MESSAGE value="Removed Lyrics. It's hopeless...." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Lyrics. It's hopeless...." />
   </component>
 </project>

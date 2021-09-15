@@ -17,7 +17,7 @@ public class MainActivity implements EventListener {
 
     public static void main(String[] args) throws LoginException, InterruptedException {
 
-        JDA jda = JDABuilder.createDefault("ODA2MTEyNTk4NDY2MjMyMzQw.YBks3A.E_Lshd4puvy4rD7tY0dq0tpTR_k")
+        JDA jda = JDABuilder.createDefault("")
                 .addEventListeners(new MainActivity())
                 .build();
 
