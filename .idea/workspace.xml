@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631735054562</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Lyrics and Updated the libraries">
+      <created>1631740121079</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631740121079</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +112,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Added Lyrics and Updated the libraries" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Lyrics and Updated the libraries" />
   </component>
