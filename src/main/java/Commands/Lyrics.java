@@ -32,7 +32,7 @@ public class Lyrics extends Command {
         final Member member = e.getMember();
         final MusicManager musicManager = PlayerManager.getInstance().getMusicManager(e.getGuild());
         final AudioPlayer audioPlayer = musicManager.audioPlayer;
-        final LyricsClient client = new LyricsClient();
+        LyricsClient client = new LyricsClient();
         EmbedBuilder eb;
 
         // Bot in VC
