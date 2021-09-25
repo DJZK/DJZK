@@ -77,6 +77,7 @@ public class PlayerManager {
 
                         channel.sendMessage(eb.build()).queue();
                     }
+                    System.out.println("Adding... " + oneTrack.getInfo().title);
 
                     //  musicManager.scheduler.LastPlayingTrack = oneTrack.getInfo().title;
                     return;
@@ -84,7 +85,7 @@ public class PlayerManager {
                     // Shows the size of the playlist
                     if (musicManager.scheduler.echo) {
                         eb = EmbedMaker.embedBuilderDescription("Adding to queue: '"
-                                + String.valueOf(tracks.size())
+                                + tracks.size()
                                 + "' tracks from playlist '"
                                 + audioPlaylist.getName()
                                 + "'");

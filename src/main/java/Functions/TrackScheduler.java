@@ -18,7 +18,6 @@ public class TrackScheduler extends AudioEventAdapter {
     public final BlockingQueue<AudioTrack> queue;
 
     public boolean looping = false, loopQueue = false, echo = true;
-    public String LastPlayingTrack;
     public TextChannel lastID;
     public Guild guild;
     public Member lastUser;
@@ -32,64 +31,88 @@ public class TrackScheduler extends AudioEventAdapter {
 
     public void queue(AudioTrack track){
         if (!this.player.startTrack(track, true)){
-            this.queue.offer(track);
+
+            try {
+                this.queue.offer(track);
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+
         }
     }
 
     public void nextTrack(){
-        this.player.startTrack(this.queue.poll(),false);
-        final AudioTrack audioTrack = this.player.getPlayingTrack();
-        final AudioTrackInfo info = audioTrack.getInfo();
 
-        if(echo){
-            eb = EmbedMaker.embedBuilderAuthor("Now Playing: " , info.title + "\n" + info.uri);
+
+        try {
+            this.player.startTrack(this.queue.poll(),false);
+            final AudioTrack audioTrack = this.player.getPlayingTrack();
+            final AudioTrackInfo info = audioTrack.getInfo();
+            if(echo){
+                eb = EmbedMaker.embedBuilderAuthor("Now Playing: " , info.title + "\n" + info.uri);
+                MessageSender.sendMessage(guild.getId(), lastID.getId(), eb);
+                eb.clear();
+                System.out.println("I am now starting to play " + info.title);
+            }
+        } catch (Exception e){
+            System.out.println("There's nothing to play next. *sad bot noises*");
+            eb = EmbedMaker.embedBuilderDescription("There's nothing to play next... *sad bot noises*");
             MessageSender.sendMessage(guild.getId(), lastID.getId(), eb);
             eb.clear();
-            System.out.println("I am now starting to play " + info.title);
         }
+
     }
 
     @Override
     public void onTrackEnd(AudioPlayer player, AudioTrack track, AudioTrackEndReason endReason){
-        final AudioTrackInfo info = track.getInfo();
 
-        // Loop if loop is requested by user
+            final AudioTrackInfo info = track.getInfo();
+            // Loop if loop is requested by user
+            if (endReason.mayStartNext) {
 
-        if(endReason.mayStartNext) {
-            if (looping) {
-                System.out.println("Looping " + info.title);
-                this.player.startTrack(track.makeClone(), false);
+                if (looping) {
+                    System.out.println("Looping " + info.title);
+                    this.player.startTrack(track.makeClone(), false);
 
-                if (echo) {
-                    eb = EmbedMaker.embedBuilderAuthor("Now Playing: ", info.title + "\n" + info.uri);
-                    MessageSender.sendMessage(guild.getId(), lastID.getId(), eb);
-                    eb.clear();
+                    if (echo) {
+                        eb = EmbedMaker.embedBuilderAuthor("Now Playing: ", info.title + "\n" + info.uri);
+                        MessageSender.sendMessage(guild.getId(), lastID.getId(), eb);
+                        eb.clear();
+                    }
+                    return;
                 }
-                return;
-            }
 
-            // Fail Check First
-            if(endReason.equals(AudioTrackEndReason.LOAD_FAILED) && retryCount != 5){
-                System.out.println(info.title + " failed to load. I will retry... \nAttempt: " + retryCount);
-                this.player.startTrack(track.makeClone(),false);
+                // Fail Check First
+                if (endReason.equals(AudioTrackEndReason.LOAD_FAILED) && retryCount != 5) {
+                    System.out.println(info.title + " failed to load. I will retry... \nAttempt: " + retryCount);
+                    this.player.startTrack(track.makeClone(), false);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    retryCount++;
+                    return;
+                }
+
+                if (loopQueue) {
+                    System.out.println("Adding back to the end of the queue: ");
+                    this.queue.add(track.makeClone());
+                }
+
+                System.out.println(info.title + " is done playing...");
+
                 try{
-                    Thread.sleep(1000);
+                    nextTrack();
+                } catch (Exception err){
+                    err.printStackTrace();
                 }
-                catch (InterruptedException e){
-                    e.printStackTrace();
-                }
-                retryCount ++;
-                return;
-            }
 
-            if(loopQueue){
-                System.out.println("Adding back to the end of the queue: ");
-                this.queue.add(track.makeClone());
-            }
 
-            System.out.println(info.title + " is done playing...");
-            nextTrack();
-            retryCount = 0;
-        }
+
+
+                retryCount = 0;
+
+            }
     }
 }
