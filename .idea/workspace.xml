@@ -1,50 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="DJZK:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="Removed Lyrics. It's hopeless....">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DJZK_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_3_0_331.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" afterDir="false" />
+    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jagrosh_JLyrics_master_6e0d97d378_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_config_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/DJZK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJZK.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_3_0_277.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/TrackScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/TrackScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/PlayerManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/PlayerManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/TrackScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/TrackScheduler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Clear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Echo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Join.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Leave.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Loop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/LoopQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/NowPlaying.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Play.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Remove.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Shuffle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Skip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Stop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/EmbedMaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/MessageSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/MusicManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerSendHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/TrackScheduler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/UniversalVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainActivity.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="DJZK &lt;emperorxizzle99@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -52,121 +51,41 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1yBWHsCS0SV9vE67cWG4ZDOkXg8" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2BbWPdvZWVMjwl3JZXYwW9OWoxP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.40028593" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn deploy" />
-      <command value="mvn clean" />
-      <command value="mvn clean:clean" />
-      <command value="mvn install:install-file" />
-      <command value="mvn compile" />
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="MainActivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainActivity" />
-      <module name="DJZK" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MainActivity" />
-      </list>
-    </recent_temporary>
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5070d81d-fe7a-4df9-9740-a21e47724099" name="Default Changelist" comment="" />
-      <created>1631725376557</created>
+      <changelist id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="" />
+      <created>1657175241670</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1631725376557</updated>
+      <updated>1657175241670</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added Lyrics and Updated the libraries">
-      <created>1631732485777</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1631732485777</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added Lyrics and Updated the libraries">
-      <created>1631733944698</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1631733944698</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added Lyrics and Updated the libraries">
-      <created>1631735054562</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1631735054562</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added Lyrics and Updated the libraries">
-      <created>1631740121079</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1631740121079</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Changed and used forked version of JDA Utils">
-      <created>1631741542611</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1631741542611</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Removed Lyrics. It's hopeless....">
-      <created>1631741754951</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1631741754951</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Removed Lyrics. It's hopeless....">
-      <created>1631741891741</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1631741891741</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Removed Lyrics. It's hopeless....">
-      <created>1631743356053</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1631743356053</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ID_ORDER">
-      <list>
-        <option value="Default.Root" />
-        <option value="Default.Author" />
-        <option value="Default.Date" />
-        <option value="Default.Subject" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -190,13 +109,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Added Lyrics and Updated the libraries" />
-    <MESSAGE value="Changed and used forked version of JDA Utils" />
-    <MESSAGE value="Removed Lyrics. It's hopeless...." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Lyrics. It's hopeless...." />
   </component>
 </project>
