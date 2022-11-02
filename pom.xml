@@ -11,12 +11,10 @@
 
 
     <dependencies>
-
-
         <dependency>
-            <groupId>pw.chew</groupId>
-            <artifactId>jda-chewtils</artifactId>
-            <version>1.22.0</version>
+            <groupId>com.jagrosh</groupId>
+            <artifactId>jda-utilities</artifactId>
+            <version>3.0.5</version>
             <scope>compile</scope>
             <type>pom</type>
         </dependency>
@@ -24,7 +22,7 @@
         <dependency>
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
-            <version>4.3.0_331</version>
+            <version>4.4.0_352</version>
         </dependency>
 
         <dependency>
@@ -41,7 +39,6 @@
     </dependencies>
 
     <repositories>
-
         <repository>
             <id>dv8tion</id>
             <name>m2-dv8tion</name>
@@ -49,13 +46,14 @@
         </repository>
 
         <repository>
-            <id>chew-m2</id>
-            <url>https://m2.chew.pro/releases</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
 
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>jcenter</id>
+            <name>jcenter-bintray</name>
+            <url>https://jcenter.bintray.com</url>
         </repository>
     </repositories>
 
