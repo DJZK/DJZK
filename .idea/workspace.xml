@@ -1,42 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DJZK:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jagrosh_JLyrics_master_6e0d97d378_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_config_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
+    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Update plugins">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jagrosh_JLyrics_master.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_command_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_commons_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_doc_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_examples_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_menu_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_oauth2_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_4_0_352.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/DJZK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJZK.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_3_0_331.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_command_1_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_commons_1_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_doc_1_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_examples_1_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_menu_1_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_oauth2_1_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Clear.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Echo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Join.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Leave.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Loop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/LoopQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/NowPlaying.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Play.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Remove.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Shuffle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Skip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/Stop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/EmbedMaker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/MessageSender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/MusicManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/PlayerSendHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/TrackScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/UniversalVariables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainActivity.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +65,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Users/DJZK/IdeaProjects/DJZK",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
@@ -85,6 +80,14 @@
       <option name="presentableId" value="Default" />
       <updated>1657175241670</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update plugins">
+      <created>1667404963640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667404963640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,5 +112,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update plugins" />
   </component>
 </project>

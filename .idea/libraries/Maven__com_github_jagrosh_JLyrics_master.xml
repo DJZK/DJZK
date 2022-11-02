@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.jagrosh:JLyrics:master">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/jagrosh/JLyrics/master/JLyrics-master.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/jagrosh/JLyrics/master/JLyrics-master-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/jagrosh/JLyrics/master/JLyrics-master-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

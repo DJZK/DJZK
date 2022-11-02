@@ -8,8 +8,6 @@ import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.events.GenericEvent;
 import net.dv8tion.jda.api.hooks.EventListener;
-import net.dv8tion.jda.api.requests.GatewayIntent;
-
 import javax.security.auth.login.LoginException;
 import java.util.Scanner;
 
@@ -17,7 +15,16 @@ public class MainActivity implements EventListener {
 
     public static void main(String[] args) throws LoginException, InterruptedException {
 
-        JDA jda = JDABuilder.createDefault("ODA2MTEyNTk4NDY2MjMyMzQw.YBks3A.vBVVU6crwH_JOahHqAuy3IxiZeQ")
+        Scanner in = new Scanner(System.in);
+        String token;
+        if(args.length == 0){
+            System.out.println("Enter bot token:");
+            token = in.nextLine();
+        }
+        else{
+            token = args[0];
+        }
+        JDA jda = JDABuilder.createDefault(token)
                 .addEventListeners(new MainActivity())
                 .build();
 
