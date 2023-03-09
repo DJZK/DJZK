@@ -14,6 +14,8 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.TextChannel;
 
+// THIS IS DEPRECATED
+@Deprecated
 public class Lyrics extends Command {
 
     public Lyrics() {

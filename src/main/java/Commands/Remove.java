@@ -37,7 +37,7 @@ public class Remove extends Command {
         String message[] = e.getMessage().getContentRaw().split(" ");
 
         // Not me, not you
-        if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK))){
+        if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
             channel.sendMessage(eb.build()).queue();
             return;

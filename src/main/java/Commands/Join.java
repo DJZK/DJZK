@@ -34,11 +34,12 @@ public class Join extends Command {
 
 
         // Not you, nope...
-        if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK))){
+        if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
             channel.sendMessage(eb.build()).queue();
             return;
         }
+
         final GuildVoiceState memberVoiceState = member.getVoiceState();
         final VoiceChannel memberChannel = memberVoiceState.getChannel();
 

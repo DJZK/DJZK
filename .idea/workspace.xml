@@ -10,32 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Update plugins">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jagrosh_JLyrics_master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_command_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_commons_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_doc_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_examples_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_menu_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jagrosh_jda_utilities_oauth2_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_4_0_352.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DJZK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJZK.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_3_0_331.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_command_1_22_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_commons_1_22_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_doc_1_22_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_examples_1_22_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_menu_1_22_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__pw_chew_jda_chewtils_oauth2_1_22_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Commands/Lock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Echo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Echo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Join.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Join.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Leave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Loop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/LoopQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/LoopQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/NowPlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/NowPlaying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Remove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Shuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Skip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Skip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/UniversalVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/UniversalVariables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -60,17 +64,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/DJZK/IdeaProjects/DJZK",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DJZK/IdeaProjects/DJZK&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
