@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Update plugins">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_4_1_353.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DJZK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJZK.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_4_0_352.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" beforeDir="false" />
-    </list>
+    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Update plugins, removed Lyrics.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667404963640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update plugins, removed Lyrics.java">
+      <created>1679894863766</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679894863766</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update plugins" />
+    <MESSAGE value="Update plugins, removed Lyrics.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update plugins, removed Lyrics.java" />
   </component>
 </project>
