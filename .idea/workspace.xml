@@ -10,24 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Update plugins">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Commands/Lock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_4_1_353.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DJZK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJZK.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_dv8tion_JDA_4_4_0_352.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_4_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Clear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Echo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Echo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Join.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Join.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Leave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Loop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/LoopQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/LoopQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/NowPlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/NowPlaying.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Remove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Shuffle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Skip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Skip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/UniversalVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/UniversalVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lyrics.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +66,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="MainActivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainActivity" />
+      <module name="DJZK" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainActivity" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
