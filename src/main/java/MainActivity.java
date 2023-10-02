@@ -58,7 +58,8 @@ public class MainActivity implements EventListener {
                 new Skip(),
                 new Stop(),
                 // new Lyrics(),
-                new Lock()
+                new Lock(),
+                new Download()
         );
 
 
