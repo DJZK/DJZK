@@ -4,7 +4,6 @@ import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
-import com.sedmelluq.discord.lavaplayer.source.AudioSourceManager;
 import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
 import com.sedmelluq.discord.lavaplayer.track.AudioPlaylist;
@@ -23,6 +22,7 @@ public class PlayerManager {
     private final Map<Long, MusicManager> musicManagers;
     private final AudioPlayerManager audioPlayerManager;
 
+    private static String trackURL = "";
     public PlayerManager() {
         this.musicManagers = new HashMap<>();
         this.audioPlayerManager = new DefaultAudioPlayerManager();
@@ -37,6 +37,47 @@ public class PlayerManager {
             guild.getAudioManager().setSendingHandler(musicManager.getSendHandler());
             return musicManager;
         });
+    }
+
+    public String getTrackLink(TextChannel channel, String trackName){
+        final MusicManager musicManager = this.getMusicManager(channel.getGuild());
+
+        this.audioPlayerManager.loadItemOrdered(musicManager, trackName, new AudioLoadResultHandler() {
+
+            EmbedBuilder eb;
+            @Override
+            public void trackLoaded(AudioTrack audioTrack){
+                trackURL = audioTrack.getInfo().uri;
+                eb = EmbedMaker.embedBuilderAuthor("Downloading: ",
+                        audioTrack.getInfo().title + "\n"
+                                + audioTrack.getInfo().uri);
+                channel.sendMessage(eb.build()).queue();
+            }
+
+            @Override
+            public void playlistLoaded(AudioPlaylist audioPlaylist) {
+                final List<AudioTrack> tracks = audioPlaylist.getTracks();
+                final AudioTrack oneTrack = tracks.get(0);
+                trackURL = oneTrack.getInfo().uri;
+                eb = EmbedMaker.embedBuilderAuthor("Adding to queue: ",
+                        oneTrack.getInfo().title + "\n"
+                                + oneTrack.getInfo().uri);
+                channel.sendMessage(eb.build()).queue();
+            }
+            @Override
+            public void noMatches() {
+                EmbedBuilder eb = EmbedMaker.embedBuilderDescription("No match found! Try searching again?");
+                channel.sendMessage(eb.build()).queue();
+            }
+
+            @Override
+            public void loadFailed(FriendlyException e) {
+                EmbedBuilder eb = EmbedMaker.embedBuilderDescription("An error occurred! Sorry I'm not perfect yet, try again perhaps?");
+                e.printStackTrace();
+                channel.sendMessage(eb.build()).queue();
+            }
+        });
+        return trackURL;
     }
 
     public void loadAndPlay(TextChannel channel, String trackURL, String type) {
@@ -111,8 +152,9 @@ public class PlayerManager {
 
                     }
 
-                    return;
+
                 }
+                return;
             }
 
             @Override
