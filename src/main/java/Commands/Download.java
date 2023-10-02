@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.List;
 
 public class Download extends Command {
 
@@ -43,7 +44,7 @@ public class Download extends Command {
             channel.sendMessage(eb.build()).queue();
             return;
         }
-        String uri;
+        String uri, title;
         // Queuing a song
         if(!e.getArgs().isEmpty()){
             // Comparing link and not
@@ -51,19 +52,24 @@ public class Download extends Command {
             if(!isUrl(link)){
                 System.out.println("Searching... " + link);
                 link = "ytsearch:" + link;
-                uri = PlayerManager.getInstance().getTrackLink(channel,link);
+                uri = PlayerManager.getInstance().getTrackLink(channel,link)[0];
+                title = PlayerManager.getInstance().getTrackLink(channel,link)[1];
             }
             // Playlist
             else {
                 System.out.println("Link detected! -> " + link);
-                uri =PlayerManager.getInstance().getTrackLink(channel,link);
+                uri = PlayerManager.getInstance().getTrackLink(channel,link)[0];
+                title = PlayerManager.getInstance().getTrackLink(channel,link)[1];
             }
 
             try {
-                executeProcessAsync("-x --audio-format mp3 --audio-quality 0 -o \\Download\\%(title)s.%(ext)s " + uri);
+                executeProcessAsync("yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", uri);
             } catch (IOException | InterruptedException ex) {
                 throw new RuntimeException(ex);
             }
+
+            eb = EmbedMaker.embedBuilderAuthor("Download Complete", title);
+            e.getTextChannel().sendMessage(eb.build()).queue();
         }
     }
 
@@ -77,26 +83,17 @@ public class Download extends Command {
         }
     }
 
-    private String executeProcessAsync(String arguments) throws IOException, InterruptedException {
-        ProcessBuilder processBuilder = new ProcessBuilder("yt-dlp.exe", arguments);
+    public void executeProcessAsync(String command, String... arguments) throws IOException, InterruptedException {
+        ProcessBuilder processBuilder = new ProcessBuilder(command);
+        processBuilder.command().addAll(List.of(arguments));
         processBuilder.redirectErrorStream(true);
-
         Process process = processBuilder.start();
-
-        StringBuilder output = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                output.append(line).append(System.lineSeparator());
-            }
-        }
 
         int exitCode = process.waitFor();
         if (exitCode != 0) {
             System.err.println("Process exited with error code " + exitCode);
         }
 
-        return output.toString();
     }
 
 }

@@ -23,6 +23,7 @@ public class PlayerManager {
     private final AudioPlayerManager audioPlayerManager;
 
     private static String trackURL = "";
+    private static String trackTitle = "";
     public PlayerManager() {
         this.musicManagers = new HashMap<>();
         this.audioPlayerManager = new DefaultAudioPlayerManager();
@@ -39,7 +40,7 @@ public class PlayerManager {
         });
     }
 
-    public String getTrackLink(TextChannel channel, String trackName){
+    public String[] getTrackLink(TextChannel channel, String trackName){
         final MusicManager musicManager = this.getMusicManager(channel.getGuild());
 
         this.audioPlayerManager.loadItemOrdered(musicManager, trackName, new AudioLoadResultHandler() {
@@ -48,10 +49,12 @@ public class PlayerManager {
             @Override
             public void trackLoaded(AudioTrack audioTrack){
                 trackURL = audioTrack.getInfo().uri;
+                trackTitle = audioTrack.getInfo().title;
                 eb = EmbedMaker.embedBuilderAuthor("Downloading: ",
                         audioTrack.getInfo().title + "\n"
                                 + audioTrack.getInfo().uri);
                 channel.sendMessage(eb.build()).queue();
+                return;
             }
 
             @Override
@@ -59,10 +62,12 @@ public class PlayerManager {
                 final List<AudioTrack> tracks = audioPlaylist.getTracks();
                 final AudioTrack oneTrack = tracks.get(0);
                 trackURL = oneTrack.getInfo().uri;
-                eb = EmbedMaker.embedBuilderAuthor("Adding to queue: ",
+                trackTitle = oneTrack.getInfo().title;
+                eb = EmbedMaker.embedBuilderAuthor("Downloading: ",
                         oneTrack.getInfo().title + "\n"
                                 + oneTrack.getInfo().uri);
                 channel.sendMessage(eb.build()).queue();
+                return;
             }
             @Override
             public void noMatches() {
@@ -77,7 +82,7 @@ public class PlayerManager {
                 channel.sendMessage(eb.build()).queue();
             }
         });
-        return trackURL;
+        return new String[]{trackURL,trackTitle};
     }
 
     public void loadAndPlay(TextChannel channel, String trackURL, String type) {
