@@ -18,9 +18,9 @@ import java.net.URISyntaxException;
 public class Download extends Command {
 
     public Download() {
-        this.name = "play";
-        this.aliases = new String[]{"p", "pl"};
-        this.help = "Plays a song!";
+        this.name = "download";
+        this.aliases = new String[]{"d", "dl"};
+        this.help = "Downloads a Song!";
         this.guildOnly = true;
         this.hidden = false;
     }
