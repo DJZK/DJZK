@@ -9,26 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Fixed some aliases">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Functions/ProcessExecute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Fixed deprecated method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Clear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Download.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Download.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Echo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Echo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Join.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Join.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Leave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Lock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Loop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/LoopQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/LoopQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/NowPlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/NowPlaying.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Remove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Shuffle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Skip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Skip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/MessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/MessageSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696257123256</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed deprecated method">
+      <option name="closed" value="true" />
+      <created>1696319095488</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696319095488</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +173,7 @@
     <MESSAGE value="Update plugins, removed Lyrics.java" />
     <MESSAGE value="Added Download.java and its implementation" />
     <MESSAGE value="Fixed some aliases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some aliases" />
+    <MESSAGE value="Fixed deprecated method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed deprecated method" />
   </component>
 </project>

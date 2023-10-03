@@ -52,32 +52,15 @@ public class Download extends Command {
             if(!isUrl(link)){
                 System.out.println("Searching... " + link);
                 link = "ytsearch:" + link;
-                uri = PlayerManager.getInstance().getTrackLink(channel,link)[0];
-                title = PlayerManager.getInstance().getTrackLink(channel,link)[1];
+                PlayerManager.getInstance().getTrackLink(channel,link);
+
             }
             // Playlist
             else {
                 System.out.println("Link detected! -> " + link);
-                uri = PlayerManager.getInstance().getTrackLink(channel,link)[0];
-                title = PlayerManager.getInstance().getTrackLink(channel,link)[1];
+               PlayerManager.getInstance().getTrackLink(channel,link);
+
             }
-
-            try {
-
-
-
-                ProcessExecute PE = new ProcessExecute();
-                Thread.sleep(3000);
-                PE.executeProcessAsync("bin\\yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", uri);
-                // executeProcessAsync("bin\\yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", uri);
-
-                eb = EmbedMaker.embedBuilderAuthor("Download Complete", title);
-                e.getTextChannel().sendMessageEmbeds(eb.build()).queue();
-            } catch (IOException | InterruptedException ex) {
-                throw new RuntimeException(ex);
-            }
-
-
         }
     }
 

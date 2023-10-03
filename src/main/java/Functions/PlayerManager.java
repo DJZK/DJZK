@@ -13,6 +13,7 @@ import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.TextChannel;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,7 +41,7 @@ public class PlayerManager {
         });
     }
 
-    public String[] getTrackLink(TextChannel channel, String trackName){
+    public void getTrackLink(TextChannel channel, String trackName){
         final MusicManager musicManager = this.getMusicManager(channel.getGuild());
 
         this.audioPlayerManager.loadItemOrdered(musicManager, trackName, new AudioLoadResultHandler() {
@@ -55,7 +56,17 @@ public class PlayerManager {
                                 + audioTrack.getInfo().uri);
                 channel.sendMessageEmbeds(eb.build()).queue();
                 musicManager.scheduler.queue.clear();
-                return;
+
+                try {
+                    ProcessExecute PE = new ProcessExecute();
+                    PE.executeProcessAsync("bin\\yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", audioTrack.getInfo().uri);
+                    // executeProcessAsync("bin\\yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", uri);
+
+                    eb = EmbedMaker.embedBuilderAuthor("Download Complete", audioTrack.getInfo().title);
+                    channel.sendMessageEmbeds(eb.build()).queue();
+                } catch (IOException | InterruptedException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
 
             @Override
@@ -69,6 +80,17 @@ public class PlayerManager {
                                 + oneTrack.getInfo().uri);
                 channel.sendMessageEmbeds(eb.build()).queue();
                 musicManager.scheduler.queue.clear();
+
+                try {
+                    ProcessExecute PE = new ProcessExecute();
+                    PE.executeProcessAsync("bin\\yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", oneTrack.getInfo().uri);
+                    // executeProcessAsync("bin\\yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", uri);
+
+                    eb = EmbedMaker.embedBuilderAuthor("Download Complete", oneTrack.getInfo().title);
+                    channel.sendMessageEmbeds(eb.build()).queue();
+                } catch (IOException | InterruptedException ex) {
+                    throw new RuntimeException(ex);
+                }
                 return;
             }
             @Override
@@ -84,7 +106,7 @@ public class PlayerManager {
                 channel.sendMessageEmbeds(eb.build()).queue();
             }
         });
-        return new String[]{trackURL,trackTitle};
+
     }
 
 
