@@ -3,6 +3,8 @@ package Functions;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.JDA;
 
+import java.util.Objects;
+
 public class MessageSender {
     private static JDA jda;
 
@@ -13,7 +15,7 @@ public class MessageSender {
 
     public static void sendMessage(String GuildID, String TextID, EmbedBuilder eb){
         try{
-            jda.getGuildById(GuildID).getTextChannelById(TextID).sendMessage(eb.build()).queue();
+            Objects.requireNonNull(Objects.requireNonNull(jda.getGuildById(GuildID)).getTextChannelById(TextID)).sendMessageEmbeds(eb.build()).queue();
         } catch (Exception e){
             System.out.println("Something happened");
             e.printStackTrace();

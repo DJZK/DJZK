@@ -27,7 +27,7 @@ public class Echo extends Command {
         // Not me, not you
         if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -40,6 +40,6 @@ public class Echo extends Command {
         else{
             eb = EmbedMaker.embedBuilderDescription("Right, I'll stay quiet.");
         }
-        channel.sendMessage(eb.build()).queue();
+        channel.sendMessageEmbeds(eb.build()).queue();
     }
 }

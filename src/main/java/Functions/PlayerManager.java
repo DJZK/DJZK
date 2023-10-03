@@ -50,10 +50,11 @@ public class PlayerManager {
             public void trackLoaded(AudioTrack audioTrack){
                 trackURL = audioTrack.getInfo().uri;
                 trackTitle = audioTrack.getInfo().title;
-                eb = EmbedMaker.embedBuilderAuthor("Downloading: ",
+                eb = EmbedMaker.embedBuilderAuthor("Downloading from Link: ",
                         audioTrack.getInfo().title + "\n"
                                 + audioTrack.getInfo().uri);
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
+                musicManager.scheduler.queue.clear();
                 return;
             }
 
@@ -66,24 +67,27 @@ public class PlayerManager {
                 eb = EmbedMaker.embedBuilderAuthor("Downloading: ",
                         oneTrack.getInfo().title + "\n"
                                 + oneTrack.getInfo().uri);
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
+                musicManager.scheduler.queue.clear();
                 return;
             }
             @Override
             public void noMatches() {
                 EmbedBuilder eb = EmbedMaker.embedBuilderDescription("No match found! Try searching again?");
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
             }
 
             @Override
             public void loadFailed(FriendlyException e) {
                 EmbedBuilder eb = EmbedMaker.embedBuilderDescription("An error occurred! Sorry I'm not perfect yet, try again perhaps?");
                 e.printStackTrace();
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
             }
         });
         return new String[]{trackURL,trackTitle};
     }
+
+
 
     public void loadAndPlay(TextChannel channel, String trackURL, String type) {
         final MusicManager musicManager = this.getMusicManager(channel.getGuild());
@@ -98,8 +102,9 @@ public class PlayerManager {
                     eb = EmbedMaker.embedBuilderAuthor("Adding to queue: ",
                             audioTrack.getInfo().title + "\n"
                                     + audioTrack.getInfo().uri);
-                    channel.sendMessage(eb.build()).queue();
+                    channel.sendMessageEmbeds(eb.build()).queue();
                 }
+                return;
             }
 
             // Playlist Wide
@@ -121,7 +126,7 @@ public class PlayerManager {
                                 oneTrack.getInfo().title + "\n"
                                         + oneTrack.getInfo().uri);
 
-                        channel.sendMessage(eb.build()).queue();
+                        channel.sendMessageEmbeds(eb.build()).queue();
                     }
                     System.out.println("Adding... " + oneTrack.getInfo().title);
 
@@ -135,7 +140,7 @@ public class PlayerManager {
                                 + "' tracks from playlist '"
                                 + audioPlaylist.getName()
                                 + "'");
-                        channel.sendMessage(eb.build()).queue();
+                        channel.sendMessageEmbeds(eb.build()).queue();
                         eb.clear();
                     }
 
@@ -151,7 +156,7 @@ public class PlayerManager {
                         final AudioTrackInfo info = tracker.getInfo();
 
                         eb = EmbedMaker.embedBuilderAuthor("Now Playing ", info.title + "\n" + info.uri);
-                        channel.sendMessage(eb.build()).queue();
+                        channel.sendMessageEmbeds(eb.build()).queue();
                         eb.clear();
 
 
@@ -165,14 +170,14 @@ public class PlayerManager {
             @Override
             public void noMatches() {
                 EmbedBuilder eb = EmbedMaker.embedBuilderDescription("No match found! Try searching again?");
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
             }
 
             @Override
             public void loadFailed(FriendlyException e) {
                 EmbedBuilder eb = EmbedMaker.embedBuilderDescription("An error occurred! Sorry I'm not perfect yet, try again perhaps?");
                 e.printStackTrace();
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
             }
         });
     }

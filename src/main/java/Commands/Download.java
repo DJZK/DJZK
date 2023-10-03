@@ -41,7 +41,7 @@ public class Download extends Command {
         // Not me. not you....
         if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
         String uri, title;
@@ -63,13 +63,21 @@ public class Download extends Command {
             }
 
             try {
-                executeProcessAsync("yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", uri);
+
+
+
+                ProcessExecute PE = new ProcessExecute();
+                Thread.sleep(3000);
+                PE.executeProcessAsync("bin\\yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", uri);
+                // executeProcessAsync("bin\\yt-dlp.exe", "-x", "--audio-format", "mp3", "--audio-quality", "0", "-o", "\\Download\\%(title)s.%(ext)s", uri);
+
+                eb = EmbedMaker.embedBuilderAuthor("Download Complete", title);
+                e.getTextChannel().sendMessageEmbeds(eb.build()).queue();
             } catch (IOException | InterruptedException ex) {
                 throw new RuntimeException(ex);
             }
 
-            eb = EmbedMaker.embedBuilderAuthor("Download Complete", title);
-            e.getTextChannel().sendMessage(eb.build()).queue();
+
         }
     }
 
@@ -82,19 +90,5 @@ public class Download extends Command {
             return false;
         }
     }
-
-    public void executeProcessAsync(String command, String... arguments) throws IOException, InterruptedException {
-        ProcessBuilder processBuilder = new ProcessBuilder(command);
-        processBuilder.command().addAll(List.of(arguments));
-        processBuilder.redirectErrorStream(true);
-        Process process = processBuilder.start();
-
-        int exitCode = process.waitFor();
-        if (exitCode != 0) {
-            System.err.println("Process exited with error code " + exitCode);
-        }
-
-    }
-
 }
 

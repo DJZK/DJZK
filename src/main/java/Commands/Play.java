@@ -37,7 +37,7 @@ public class Play extends Command {
         // Not me. not you....
         if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -51,7 +51,7 @@ public class Play extends Command {
         // User in voice channel
         if(!memberVoiceState.inVoiceChannel()){
             eb = EmbedMaker.embedBuilderDescription("Are you sure? Go Join a VC first....");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             eb.clear();
             return;
         }
@@ -60,7 +60,7 @@ public class Play extends Command {
         if(!Join.called) {
             if (!memberVoiceState.getChannel().equals(selfVoiceState.getChannel())) {
                 eb = EmbedMaker.embedBuilderDescription("What? Come on and join with me first!");
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
                 eb.clear();
                 return;
             }
@@ -72,7 +72,7 @@ public class Play extends Command {
         // Play without params
         if(e.getArgs().isEmpty() && audioPlayer.getPlayingTrack() == null){
             eb = EmbedMaker.embedBuilderDescription("Yo, play some song.");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             eb.clear();
             return;
         }
@@ -84,7 +84,7 @@ public class Play extends Command {
             if(e.getArgs().isEmpty() && audioPlayer.isPaused()){
                 audioPlayer.setPaused(false);
                 eb = EmbedMaker.embedBuilderDescription("Alright, I'll resume..");
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
                 eb.clear();
                 return;
             }
@@ -92,7 +92,7 @@ public class Play extends Command {
             if(e.getArgs().isEmpty() && !audioPlayer.isPaused()){
                 audioPlayer.setPaused(true);
                 eb = EmbedMaker.embedBuilderDescription("Aight... aight, I'll pause..");
-                channel.sendMessage(eb.build()).queue();
+                channel.sendMessageEmbeds(eb.build()).queue();
                 eb.clear();
                 return;
             }

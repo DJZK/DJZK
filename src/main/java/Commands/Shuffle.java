@@ -39,14 +39,14 @@ public class Shuffle extends Command {
         // Not me, not you
         if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
         // Bot in VC
         if (!selfVoiceState.inVoiceChannel()) {
             eb = EmbedMaker.embedBuilderDescription("You gotta call me, come on..");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
         final GuildVoiceState memberVoiceState = member.getVoiceState();
@@ -54,14 +54,14 @@ public class Shuffle extends Command {
         // User in voice channel
         if(!memberVoiceState.inVoiceChannel()){
             eb = EmbedMaker.embedBuilderDescription("Are you sure? Go Join a VC first....");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
         // Not with the bot
         if(!memberVoiceState.getChannel().equals(selfVoiceState.getChannel())){
             eb = EmbedMaker.embedBuilderDescription("What? Come on and join with me first!");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -85,7 +85,7 @@ public class Shuffle extends Command {
                 catch (Exception err) {
                     err.printStackTrace();
                     eb = EmbedMaker.embedBuilderDescription("Error occurred");
-                    channel.sendMessage(eb.build()).queue();
+                    channel.sendMessageEmbeds(eb.build()).queue();
                     eb.clear();
                     return;
                 }
@@ -93,6 +93,6 @@ public class Shuffle extends Command {
         }
         // Shuffled
         eb = EmbedMaker.embedBuilderDescription("LET'S GET READY TO RUMBLE!!!!");
-        channel.sendMessage(eb.build()).queue();
+        channel.sendMessageEmbeds(eb.build()).queue();
     }
 }

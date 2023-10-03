@@ -43,7 +43,7 @@ public class Queue extends Command {
         // Not me, not you
         if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -51,7 +51,7 @@ public class Queue extends Command {
         // Bot in VC
         if (!selfVoiceState.inVoiceChannel()) {
             eb = EmbedMaker.embedBuilderDescription("You gotta call me, come on..");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
         final GuildVoiceState memberVoiceState = member.getVoiceState();
@@ -59,14 +59,14 @@ public class Queue extends Command {
         // User in voice channel
         if(!memberVoiceState.inVoiceChannel()){
             eb = EmbedMaker.embedBuilderDescription("Are you sure? Go Join a VC first....");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
         // Not with the bot
         if(!memberVoiceState.getChannel().equals(selfVoiceState.getChannel())){
             eb = EmbedMaker.embedBuilderDescription("What? Come on and join with me first!");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -78,7 +78,7 @@ public class Queue extends Command {
 
         if(queue.isEmpty()){
             eb = EmbedMaker.embedBuilderDescription("Nothing's in the queue dude....");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -95,7 +95,7 @@ public class Queue extends Command {
             embedQueue.addField("","and " + (trackList.size() - trackCount) + " more...",false);
         }
 
-        channel.sendMessage(embedQueue.build()).queue();
+        channel.sendMessageEmbeds(embedQueue.build()).queue();
         np.execute(e);
 
     }

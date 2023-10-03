@@ -10,8 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Fixed some aliases">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Functions/ProcessExecute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Clear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Download.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Download.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Echo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Echo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Join.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Join.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Leave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Lock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Loop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/LoopQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/LoopQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/NowPlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/NowPlaying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Remove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Remove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Shuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Shuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Skip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Skip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Stop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/MessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/MessageSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +51,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DJZK"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DJZK&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -51,28 +68,28 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2BbWPdvZWVMjwl3JZXYwW9OWoxP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Download-Feature",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/DJZK/IdeaProjects/DJZK",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Download-Feature&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DJZK/IdeaProjects/DJZK&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MainActivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainActivity" />

@@ -28,7 +28,7 @@ public class Lock extends Command {
         // Not me, not you
         if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK))){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -41,6 +41,6 @@ public class Lock extends Command {
         else{
             eb = EmbedMaker.embedBuilderDescription("YOU SHALL NOT PASS!! -Gandalf");
         }
-        channel.sendMessage(eb.build()).queue();
+        channel.sendMessageEmbeds(eb.build()).queue();
     }
 }

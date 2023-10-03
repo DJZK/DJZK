@@ -41,7 +41,7 @@ public class NowPlaying extends Command {
         // Bot in VC
         if (!selfVoiceState.inVoiceChannel()) {
             eb = EmbedMaker.embedBuilderDescription("You gotta call me, come on..");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
         final GuildVoiceState memberVoiceState = member.getVoiceState();
@@ -49,14 +49,14 @@ public class NowPlaying extends Command {
         // User in voice channel
         if(!memberVoiceState.inVoiceChannel()){
             eb = EmbedMaker.embedBuilderDescription("Are you sure? Go Join a VC first....");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
         // Not with the bot
         if(!memberVoiceState.getChannel().equals(selfVoiceState.getChannel())){
             eb = EmbedMaker.embedBuilderDescription("What? Come on and join with me first!");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -69,6 +69,6 @@ public class NowPlaying extends Command {
             eb = EmbedMaker.embedBuilderAuthor("Now Playing", audioPlayer.getPlayingTrack().getInfo().title + "\n" + audioPlayer.getPlayingTrack().getInfo().uri);
         }
 
-        channel.sendMessage(eb.build()).queue();
+        channel.sendMessageEmbeds(eb.build()).queue();
     }
 }

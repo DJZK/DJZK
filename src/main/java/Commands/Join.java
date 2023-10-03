@@ -36,7 +36,7 @@ public class Join extends Command {
         // Not you, nope...
         if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -46,20 +46,20 @@ public class Join extends Command {
         // am i at voice channel
         if(selfVoiceState.inVoiceChannel()){
             eb = EmbedMaker.embedBuilderDescription("Nope, I'm already at somewhere else... :D");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
             }
 
         // member at voice channel
         if(!memberVoiceState.inVoiceChannel()){
             eb = EmbedMaker.embedBuilderDescription("You gotta join somewhere first.");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
         if (!self.hasPermission(memberChannel, Permission.VOICE_CONNECT)) {
             eb = EmbedMaker.embedBuilderDescription("I have no access bud...");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
 
         }
@@ -80,7 +80,7 @@ public class Join extends Command {
 
         // Output
         eb = EmbedMaker.embedBuilderDescription("I joined <#" + memberChannel.getId() + "> and bound to <#" + musicManager.scheduler.lastID.getId() + ">");
-        channel.sendMessage(eb.build()).queue();
+        channel.sendMessageEmbeds(eb.build()).queue();
 
         System.out.println("I joined " + memberChannel.getName() + " and bound to " +  musicManager.scheduler.lastID.getName());
     }

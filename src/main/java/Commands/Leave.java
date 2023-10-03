@@ -29,14 +29,14 @@ public class Leave extends Command {
         // Not me. not you
         if(!(member.getPermissions().contains(Permission.ADMINISTRATOR) || member.getId().equals(UniversalVariables.DJZK) || UniversalVariables.Unlocked)){
             eb = EmbedMaker.embedBuilderDescription(MessageSender.noPermission);
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
         // Bot not in VC
         if(!selfVoiceState.inVoiceChannel()){
             eb = EmbedMaker.embedBuilderDescription("You gotta call me, come on..");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
@@ -45,20 +45,20 @@ public class Leave extends Command {
         // User not in voice channel
         if(!memberVoiceState.inVoiceChannel()){
             eb = EmbedMaker.embedBuilderDescription("Are you sure? Go join a vc first..");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
         // Not with the bot
         if(!memberVoiceState.getChannel().equals(selfVoiceState.getChannel())){
             eb = EmbedMaker.embedBuilderDescription("What now? You're not even here...");
-            channel.sendMessage(eb.build()).queue();
+            channel.sendMessageEmbeds(eb.build()).queue();
             return;
         }
 
         // Finally
         eb = EmbedMaker.embedBuilderDescription("Leaving..");
-        channel.sendMessage(eb.build()).queue();
+        channel.sendMessageEmbeds(eb.build()).queue();
         audioManager.closeAudioConnection();
         System.out.println("Left " + member.getVoiceState().getChannel());
 
