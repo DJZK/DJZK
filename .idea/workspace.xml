@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Fixed deprecated method">
+    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Commands/Download.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/Download.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" afterDir="false" />
@@ -33,6 +33,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -43,7 +44,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="0fa13a9a-dfb7-4971-a442-7af38e3bfd1a" />
+        <option name="accountId" value="28bbe08b-c809-4f3f-af28-d98a2b7f06f2" />
         <option name="url" value="https://github.com/DJZK/DJZK.git" />
       </UrlAndAccount>
     </option>
@@ -73,6 +74,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git push" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="MainActivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainActivity" />

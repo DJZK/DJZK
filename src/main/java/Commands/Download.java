@@ -52,13 +52,13 @@ public class Download extends Command {
             if(!isUrl(link)){
                 System.out.println("Searching... " + link);
                 link = "ytsearch:" + link;
-                PlayerManager.getInstance().getTrackLink(channel,link);
+                PlayerManager.getInstance().getTrackLink(channel,link, "search");
 
             }
             // Playlist
             else {
                 System.out.println("Link detected! -> " + link);
-               PlayerManager.getInstance().getTrackLink(channel,link);
+               PlayerManager.getInstance().getTrackLink(channel,link, "playlist");
 
             }
         }
