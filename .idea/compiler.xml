@@ -9,8 +9,5 @@
         <module name="DJZK" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="DJZK" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
