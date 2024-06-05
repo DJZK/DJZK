@@ -2,6 +2,7 @@ package Functions;
 
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter;
+import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
@@ -63,56 +64,4 @@ public class TrackScheduler extends AudioEventAdapter {
 
     }
 
-    @Override
-    public void onTrackEnd(AudioPlayer player, AudioTrack track, AudioTrackEndReason endReason){
-
-            final AudioTrackInfo info = track.getInfo();
-            // Loop if loop is requested by user
-            if (endReason.mayStartNext) {
-
-                if (looping) {
-                    System.out.println("Looping " + info.title);
-                    this.player.startTrack(track.makeClone(), false);
-
-                    if (echo) {
-                        eb = EmbedMaker.embedBuilderAuthor("Now Playing: ", info.title + "\n" + info.uri);
-                        MessageSender.sendMessage(guild.getId(), lastID.getId(), eb);
-                        eb.clear();
-                    }
-                    return;
-                }
-
-                // Fail Check First
-                if (endReason.equals(AudioTrackEndReason.LOAD_FAILED) && retryCount != 5) {
-                    System.out.println(info.title + " failed to load. I will retry... \nAttempt: " + retryCount);
-                    this.player.startTrack(track.makeClone(), false);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    retryCount++;
-                    return;
-                }
-
-                if (loopQueue) {
-                    System.out.println("Adding back to the end of the queue: ");
-                    this.queue.add(track.makeClone());
-                }
-
-                System.out.println(info.title + " is done playing...");
-
-                try{
-                    nextTrack();
-                } catch (Exception err){
-                    err.printStackTrace();
-                }
-
-
-
-
-                retryCount = 0;
-
-            }
-    }
 }
