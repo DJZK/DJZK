@@ -65,6 +65,7 @@ public class PlayerManager {
                                     + audioTrack.getInfo().uri);
                     channel.sendMessage(eb.build()).queue();
                 }
+                return;
             }
 
             // Playlist Wide
