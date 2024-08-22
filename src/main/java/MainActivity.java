@@ -38,7 +38,7 @@ public class MainActivity implements EventListener {
         jda.awaitReady();
 
         // Sets the Online Status + Game Playing
-        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.listening("my queen..."));
+        jda.getPresence().setPresence(OnlineStatus.ONLINE, Activity.listening("your orders."));
 
 
         // Commands

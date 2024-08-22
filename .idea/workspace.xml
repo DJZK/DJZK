@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Added new Youtube Source Manager">
+    <list default="true" id="9feb8a4c-2763-497b-a811-c58b150695ca" name="Changes" comment="Changed bot Status">
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/DJZK_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/DJZK_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DJZK.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/PlayerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/TrackScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/TrackScheduler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +30,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Download-Feature" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -44,14 +45,14 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/DJZK/DJZK.git&quot;,
-    &quot;accountId&quot;: &quot;44b41e95-f896-4de3-bf8c-9bbbd8f1b034&quot;
+    &quot;accountId&quot;: &quot;fe1b0005-fc14-4891-b1f1-0503fbb8cfc4&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2BbWPdvZWVMjwl3JZXYwW9OWoxP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -59,24 +60,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MainActivity.executor": "Run",
-    "Maven.DJZK [clean].executor": "Run",
-    "Maven.DJZK [install].executor": "Run",
-    "Maven.DJZK [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/DJZK/IdeaProjects/DJZK",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainActivity.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DJZK/IdeaProjects/DJZK&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git push" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="MainActivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainActivity" />
@@ -87,6 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainActivity" />
         <item itemvalue="Application.MainActivity" />
       </list>
     </recent_temporary>
@@ -114,18 +118,65 @@
       <option name="project" value="LOCAL" />
       <updated>1679894863766</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added new Youtube Source Manager">
+    <task id="LOCAL-00003" summary="Update plugins, removed Lyrics.java">
       <option name="closed" value="true" />
-      <created>1717306604177</created>
+      <created>1696256743046</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1717306604177</updated>
+      <updated>1696256743046</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Download.java and its implementation">
+      <option name="closed" value="true" />
+      <created>1696256918051</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696256918051</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed some aliases">
+      <option name="closed" value="true" />
+      <created>1696257123256</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696257123256</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed deprecated method">
+      <option name="closed" value="true" />
+      <created>1696319095488</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696319095488</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed bot Status">
+      <option name="closed" value="true" />
+      <created>1717561522735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717561522735</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/Download-Feature" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -136,7 +187,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="Download-Feature" />
                       </list>
                     </value>
                   </entry>
@@ -151,7 +202,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update plugins" />
     <MESSAGE value="Update plugins, removed Lyrics.java" />
-    <MESSAGE value="Added new Youtube Source Manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new Youtube Source Manager" />
+    <MESSAGE value="Added Download.java and its implementation" />
+    <MESSAGE value="Fixed some aliases" />
+    <MESSAGE value="Fixed deprecated method" />
+    <MESSAGE value="Changed bot Status" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed bot Status" />
   </component>
 </project>
