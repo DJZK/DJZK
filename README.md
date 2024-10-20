@@ -4,7 +4,7 @@
 **DJZK/DJZK** is the repository for the DJZK bot. This symbolizes me being a DJ, Music Producer, and Sound Engineer first.
 DJZK is made from LavaPlayer and JDA4 which depends on Discord API and Discord.
 
-Here are some ideas to get you started:
+About me:
 
 - 🔭 I’m currently a business partner under PC Wise (Wisekider) as a Computer Wizard, and a technical expert.
 - 🌱 I’m currently learning more C#... And some deeper Linux knowledge.
